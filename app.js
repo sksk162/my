@@ -3,6 +3,7 @@ const http = require('http');
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello from Jenkins CI/CD!');
+    res.end('Hello from Jenkins CI/CD v2!');
 });
 
 server.listen(3000, () => {
